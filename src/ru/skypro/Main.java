@@ -17,7 +17,7 @@ public class Main {
         int maxSumDay = 90_000;
         int minSumDay = 201_000;
         for (int i : arr) {
-            if ( maxSumDay < i) {
+            if (maxSumDay < i) {
                 maxSumDay = i;
             }
             if (minSumDay > i)
@@ -33,13 +33,25 @@ public class Main {
 
 // Task 4
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
 
         }
 
+// Task 5
+
+// Task 6
+
+// Task 7
+
+// Task 8
+
+// Task 9
+
+
     }
+
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
