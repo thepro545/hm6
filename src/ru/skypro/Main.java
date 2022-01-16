@@ -40,30 +40,21 @@ public class Main {
         }
         System.out.println();
 
-// Task 5  - Нужна подсказка)) пока не понимаю как с foreach в матрице такой работать
-
-//        int[][] gameField = new int[3][3];
-//        for (int i = 0; i < gameField.length; i++) {
-//            for (int j = 0; j < gameField[0].length; j++) {
-//                if ((i + j) % 2 == 0) gameField[j][i] = 1;
-//                System.out.print(gameField[j][i] + " ");
-//            }
-//            System.out.println();
-//        }
-
+// Task 5
         int[][] matrix = new int[3][3];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if ((i + j) % 2 == 0) matrix[j][i] = 1;
+                matrix[i][matrix.length - 1 - i] = 1;
+            }
+        }
         for (int[] row : matrix) {
             for (int column : row) {
-                 if (column == 1)
-                //          if (row[column] % 2 == 0 && (matrix[] + row[column]) %2 == 0)
-                column = 2;
                 System.out.print(column + " ");
             }
-
-
             System.out.println();
         }
-// Task 6 Исправил
+// Task 6
 
         int[] arr6 = {5, 8, 2, 3, 9};
         int[] arr6Copy = new int[5];
@@ -73,7 +64,7 @@ public class Main {
         System.out.println(Arrays.toString(arr6Copy));
 
 
-// Task 7 Исправил
+// Task 7
         int[] arr7 = {5, 8, 2, 3, 9};
         int arr7Temp;
         System.out.println(Arrays.toString(arr7));
@@ -83,11 +74,11 @@ public class Main {
             arr7[i] = arr7Temp;
         }
         System.out.println(Arrays.toString(arr7));
-// Task 8 Доделал нормально
+// Task 8
         int[] arr8 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         int sum1 = -2;
         boolean exitF = true;
-       // System.out.println(Arrays.toString(arr8));
+        // System.out.println(Arrays.toString(arr8));
         for (int j = 0; j <= (arr8.length) / 2; j++) {
             for (int i = arr8.length - 1; i >= (arr8.length) / 2; i--) {
                 if (arr8[j] + arr8[i] == sum1) {
@@ -99,7 +90,7 @@ public class Main {
         }
 
 
-// Task 9 Доделал нормально
+// Task 9
         //     int[] arr9 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         //     int sum2 = -2;
         // Arrays.sort(arr8);
@@ -110,8 +101,6 @@ public class Main {
                     System.out.println(arr8[j] + " " + arr8[i]);
             }
         }
-
-
     }
 
     // Рандом
