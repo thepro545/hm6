@@ -40,29 +40,29 @@ public class Main {
         }
         System.out.println();
 
-// Task 5  - Не доделал
+// Task 5  - Нужна подсказка)) пока не понимаю как с foreach в матрице такой работать
 
-        int[][] gameField = new int[3][3];
-        for (int i = 0; i < gameField.length; i++) {
-            for (int j = 0; j < gameField[0].length; j++) {
-                if ((i + j) % 2 == 0) gameField[j][i] = 1;
-                System.out.print(gameField[j][i] + " ");
-            }
-            System.out.println();
-        }
-
-//        int[][] matrix = new int[3][3];
-//        for (int[] row : matrix) {
-//            for (int column : row) {
-//                // if (row[column] == row.length-1 || )
-//                //          if (row[column] % 2 == 0 && (matrix[] + row[column]) %2 == 0)
-//                column = 2;
-//                System.out.print(column + " ");
+//        int[][] gameField = new int[3][3];
+//        for (int i = 0; i < gameField.length; i++) {
+//            for (int j = 0; j < gameField[0].length; j++) {
+//                if ((i + j) % 2 == 0) gameField[j][i] = 1;
+//                System.out.print(gameField[j][i] + " ");
 //            }
-//
-//
 //            System.out.println();
 //        }
+
+        int[][] matrix = new int[3][3];
+        for (int[] row : matrix) {
+            for (int column : row) {
+                 if (column == 1)
+                //          if (row[column] % 2 == 0 && (matrix[] + row[column]) %2 == 0)
+                column = 2;
+                System.out.print(column + " ");
+            }
+
+
+            System.out.println();
+        }
 // Task 6 Исправил
 
         int[] arr6 = {5, 8, 2, 3, 9};
