@@ -63,59 +63,55 @@ public class Main {
 //
 //            System.out.println();
 //        }
-// Task 6 - Не доделал
+// Task 6 Исправил
 
-//        int[] arr5 = {5, 8, 2, 3, 9};
-//        int[] arr5Copy = Arrays.copyOf(arr5, arr5.length);
-//        System.out.println(Arrays.toString(arr5));
-//        for (int j = 0; j <= arr5.length - 1; j++) {
-//            for (int i = arr5Copy.length - 1; i >= 0; i--) {
-//                arr5Copy[i] = arr5[j];
-//            }
-//        }
-//
-//        System.out.println(Arrays.toString(arr5Copy));
+        int[] arr6 = {5, 8, 2, 3, 9};
+        int[] arr6Copy = new int[5];
+        System.out.println(Arrays.toString(arr6));
+        for (int i = 0; i <= arr6.length - 1; i++)
+            arr6Copy[i] = arr6[arr6.length - i - 1];
+        System.out.println(Arrays.toString(arr6Copy));
 
 
-// Task 7- Не доделал
-//        int[] arr4 = {5, 8, 2, 3, 9};
-//        int arr4T1 = arr4[0];
-//        System.out.println(Arrays.toString(arr4));
-//        for (int j = 0; j <= arr4.length - 1; j++) {
-//            for (int i = arr4.length - 1; i >= 0; i--) {
-//                arr4T1 = arr4[i];
-//                arr4[i] = arr4[j];
-//                arr4[j] = arr4T1;
-//                //  System.out.print(arr4T1);
-//
-//            }
-//        }
-//        System.out.println(Arrays.toString(arr4));
-// Task 9
+// Task 7 Исправил
+        int[] arr7 = {5, 8, 2, 3, 9};
+        int arr7Temp;
+        System.out.println(Arrays.toString(arr7));
+        for (int i = 0; i <= (arr7.length) / 2; i++) {
+            arr7Temp = arr7[arr7.length - i - 1];
+            arr7[arr7.length - i - 1] = arr7[i];
+            arr7[i] = arr7Temp;
+        }
+        System.out.println(Arrays.toString(arr7));
+// Task 8 Доделал нормально
         int[] arr8 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         int sum1 = -2;
-        Arrays.sort(arr8);
+        boolean exitF = true;
         System.out.println(Arrays.toString(arr8));
-        for (int j = 0; j <= (arr8.length - 1)/ 2; j++) {
-            for (int i = arr8.length - 1; i >= 0; i--) {
+        for (int j = 0; j <= (arr8.length) / 2; j++) {
+            for (int i = arr8.length - 1; i >= (arr8.length) / 2; i--) {
                 if (arr8[j] + arr8[i] == sum1) {
                     System.out.println(arr8[j] + " " + arr8[i]);
-                    break;
+                    exitF = false;
                 }
+                if (!exitF) break;
             }
         }
-// Task 8
-        int[] arr9 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
-        int sum2 = -2;
-       System.out.println(Arrays.toString(arr9));
-        for (int j = 0; j <= (arr9.length - 1) / 2; j++) {
-            for (int i = arr9.length - 1; i >= 0; i--) {
-                if (arr9[j] + arr9[i] == sum2) {
-                    System.out.println(arr9[j] + " " + arr9[i]);
-                    return;
-                }
+
+
+// Task 9 Доделал нормально
+        //     int[] arr9 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        //     int sum2 = -2;
+        // Arrays.sort(arr8);
+        System.out.println(Arrays.toString(arr8));
+        for (int j = 0; j <= (arr8.length) / 2; j++) {
+            for (int i = arr8.length - 1; i >= (arr8.length) / 2; i--) {
+                if (arr8[j] + arr8[i] == sum1)
+                    System.out.println(arr8[j] + " " + arr8[i]);
             }
         }
+
+
     }
 
     // Рандом
