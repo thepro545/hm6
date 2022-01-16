@@ -43,10 +43,8 @@ public class Main {
 // Task 5
         int[][] matrix = new int[3][3];
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                if ((i + j) % 2 == 0) matrix[j][i] = 1;
+                matrix[i][i] = 1;
                 matrix[i][matrix.length - 1 - i] = 1;
-            }
         }
         for (int[] row : matrix) {
             for (int column : row) {
