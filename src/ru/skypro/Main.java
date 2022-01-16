@@ -87,7 +87,7 @@ public class Main {
         int[] arr8 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         int sum1 = -2;
         boolean exitF = true;
-        System.out.println(Arrays.toString(arr8));
+       // System.out.println(Arrays.toString(arr8));
         for (int j = 0; j <= (arr8.length) / 2; j++) {
             for (int i = arr8.length - 1; i >= (arr8.length) / 2; i--) {
                 if (arr8[j] + arr8[i] == sum1) {
@@ -103,7 +103,7 @@ public class Main {
         //     int[] arr9 = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         //     int sum2 = -2;
         // Arrays.sort(arr8);
-        System.out.println(Arrays.toString(arr8));
+        //System.out.println(Arrays.toString(arr8));
         for (int j = 0; j <= (arr8.length) / 2; j++) {
             for (int i = arr8.length - 1; i >= (arr8.length) / 2; i--) {
                 if (arr8[j] + arr8[i] == sum1)
